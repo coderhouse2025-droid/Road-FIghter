@@ -5,6 +5,8 @@
 
 Un homenaje arcade al clásico **Road Fighter** (Konami, 1984), reversionado con identidad propia: Isis, una gata gris con anteojos de sol, corre en un Fórmula 1 rosa a través de cinco barrios del partido de La Matanza, Buenos Aires.
 
+<img width="1536" height="1024" alt="Mockup" src="https://github.com/user-attachments/assets/9c51fe8f-788f-45bd-8c8f-89c8505997aa" />
+
 Jugalo directo desde el navegador, sin instalar nada:
 **[👉 Jugar en GitHub Pages](https://coderhouse2025-droid.github.io/Road-FIghter-LM/)**
 
