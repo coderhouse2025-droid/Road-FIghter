@@ -44,7 +44,7 @@ El juego detecta automáticamente dispositivos móviles y muestra controles tác
 
 - 🐾 **3 vidas**: cada choque cuesta una vida; sin vidas, se acaba la carrera.
 - ⛽ **Combustible**: se agota con la velocidad y la distancia recorrida; recolectá los tambores de combustible en la pista para reponerlo.
-- 🐾**Huellas de gato** el logo de las huellas de gato, la marca registrada de Isis repara los daños en la carrocería del auto.
+- 🐾**Huellas de gato**: el logo de las huellas de gato, la marca registrada de Isis repara los daños en la carrocería del auto.
 - 🚌🏍️ **Tráfico variable**: colectivos, motos y manchas de aceite con patrones distintos por barrio.
 - 🏆 **Puntuación y récord**: el mejor puntaje se guarda automáticamente en el navegador (`localStorage`) y persiste entre partidas.
 - 🎉 **Final épico**: al completar los cinco barrios, Isis levanta la Copa Road Fighter con música de victoria y una pantalla de cierre animada.
@@ -90,4 +90,4 @@ Este proyecto se distribuye bajo licencia [MIT](https://opensource.org/licenses/
 
 ---
 
-<p align="center">Hecho con 🐾 y mucho café en La Matanza</p>
+<p align="center">Hecho con 🐾 y mucho maté en La Matanza</p>
