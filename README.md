@@ -1,101 +1,88 @@
-#  Road Fighter - Versión La Matanza (EN PRODUCCIÓN )
-<img width="1147" height="1372" alt="banner RF" src="https://github.com/user-attachments/assets/7194e439-f345-4c60-a9d9-9774ec62bd5a" />
+# 🏁 Road Fighter — Versión La Matanza
 
+> 🐾 Un homenaje arcade al clásico **Road Fighter** (Konami, 1984), reversionado con identidad propia: **Isis**, una gata gris atigrada con el número **31**, corre en un Fórmula 1 rosa a través de cinco barrios del partido de **La Matanza, Buenos Aires**.
 
-# 🏎️ Road Fighter — Versión La Matanza
-
-Un homenaje arcade al clásico **Road Fighter** (Konami, 1984), reversionado con identidad propia: Isis, una gata gris con anteojos de sol, corre en un Fórmula 1 rosa a través de cinco barrios del partido de La Matanza, Buenos Aires.
-
-<img width="1536" height="1024" alt="Mockup" src="https://github.com/user-attachments/assets/9c51fe8f-788f-45bd-8c8f-89c8505997aa" />
-
-Jugalo directo desde el navegador, sin instalar nada:
-**[👉 Jugar en GitHub Pages](https://coderhouse2025-droid.github.io/Road-FIghter-LM/)**
+![Estado](https://img.shields.io/badge/estado-jugable-brightgreen)
+![Plataforma](https://img.shields.io/badge/plataforma-navegador-blue)
+![Tecnología](https://img.shields.io/badge/tech-HTML5%20%7C%20Canvas%20%7C%20JS-yellow)
+![Licencia](https://img.shields.io/badge/licencia-MIT-lightgrey)
 
 ---
 
-## 📖 Historia y motivación
+## 🎮 Sobre el juego
 
-Este proyecto nació como un ejercicio personal para combinar dos cosas que me gustan: los juegos arcade de los '80/'90 y la programación con JavaScript puro, sin frameworks ni dependencias externas.
+Metete en la butaca del Fórmula 1 rosa manejado por Isis y cruzá cinco barrios esquivando tráfico, motos y manchas de aceite. Juntá combustible para reparar la carrocería y llegá entera hasta Gregorio de Laferrere. Cada barrio sube la apuesta: más velocidad, más carriles cerrados y más tránsito.
 
-Elegí **Road Fighter** como base porque es un juego simple de entender (esquivar tráfico, no quedarse sin combustible, llegar a la meta) pero con mucho margen para agregarle capas de complejidad: niveles con dificultad progresiva, curvas de camino, daño acumulado en la carrocería, un sistema de power-ups y una estética propia.
+El juego es un archivo **HTML único y autocontenido** (sin dependencias externas, sin instalación): todo el código, los gráficos, la música y los efectos de sonido están embebidos en `index.html`. Basta con abrirlo en un navegador para jugar.
 
-La decisión de ambientarlo en **La Matanza** —recorriendo Ramos Mejía, San Justo, Lomas del Mirador, Isidro Casanova y Gregorio de Laferrere— surgió para darle identidad local al proyecto en lugar de una pista genérica, y la protagonista (Isis, la gata piloto) es un guiño personal que le da carácter al juego más allá de la mecánica.
+## 🐱 Los cinco barrios
 
-Más que un clon, la idea fue usar el formato del juego original como excusa para practicar:
-- Programación de un game loop completo (estado, física simple, colisiones, HUD).
-- Generación procedural de escenografía y tráfico.
-- Sonido sintetizado en tiempo real, sin archivos de audio.
-- Diseño responsive para que funcione tanto en PC como en el celular.
+| # | Barrio | Dificultad |
+|---|--------|:---:|
+| 1️⃣ | Ramos Mejía | 🟢 |
+| 2️⃣ | San Justo | 🟢🟡 |
+| 3️⃣ | Lomas del Mirador | 🟡 |
+| 4️⃣ | Isidro Casanova | 🟠 |
+| 5️⃣ | Gregorio de Laferrere | 🔴 |
 
-## 🕹️ De qué se trata el juego
+Cada tramo aumenta la velocidad base, reduce los carriles disponibles y acelera el consumo de combustible, exigiendo reflejos cada vez más finos.
 
-Isis maneja un Fórmula 1 rosa (con el número **31**) y tiene que atravesar 5 barrios de La Matanza esquivando autos, motos, colectivos, ambulancias e incluso un carro tirado a caballo, sin quedarse sin combustible ni acumular demasiado daño en la carrocería.
+## 🕹️ Controles
 
-### Objetivo
-- Llegar viva al final de cada barrio antes de que se acabe el reloj.
-- Esquivar el tráfico y las manchas de aceite.
-- Recolectar bidones de combustible (además de recargar nafta, reparan un poco la carrocería).
-
-### Barrios / niveles
-| # | Barrio                     | Dificultad          |
-|---|-----------------------------|----------------------|
-| 1 | Ramos Mejía                | Introductorio |
-| 2 | San Justo                   | Fácil |
-| 3 | Lomas del Mirador            | Media |
-| 4 | Isidro Casanova                    | Alta |
-| 5 | Gregorio de Laferrere        | Máxima |
-
-### Tráfico y eventos especiales
-- **Autos y motos**: tráfico genérico que aumenta de velocidad y densidad en cada barrio.
-- **Colectivos**: llevan un número de línea real pintado en el techo, visible desde arriba.
-- **Ambulancias**: aparecen dos veces en los dos primeros barrios, con sirena sonora (sintetizada) y luces rojas/azules que destellan en tiempo real.
-- **Carro a caballo**: aparece dos veces en el último barrio (Gregorio de Laferrere), como guiño a los caminos menos pavimentados de la zona.
-- **Manchas de aceite**: provocan un derrape temporal.
-
-### Controles
-| Acción | Teclado | Táctil (celular) |
+| Acción | Teclado | Pantalla táctil |
 |---|---|---|
-| Girar izquierda / derecha | ← / → | Botones ◀ ▶ |
-| Acelerar (turbo) | ↑ | Botón ▲ |
-| Frenar | ↓ | Botón ▼ |
+| ⬆️ Acelerar / ⬇️ Frenar | Flechas arriba / abajo | Botones en pantalla |
+| ⬅️➡️ Cambiar de carril | Flechas izquierda / derecha | Botones en pantalla |
 
-El juego detecta automáticamente si el dispositivo es táctil y muestra los controles en pantalla; en celular, además, pide pantalla completa al primer toque para ocultar la barra de direcciones del navegador.
+El juego detecta automáticamente dispositivos móviles y muestra controles táctiles superpuestos.
 
-## 🛠️ Tecnología utilizada
+## ⚙️ Mecánicas principales
 
-El juego está desarrollado **100% con tecnologías web nativas**, sin librerías ni frameworks:
+- 🐾 **3 vidas**: cada choque cuesta una vida; sin vidas, se acaba la carrera.
+- ⛽ **Combustible**: se agota con la velocidad y la distancia recorrida; recolectá los tambores de combustible en la pista para reponerlo.
+- 🚌🏍️ **Tráfico variable**: colectivos, motos y manchas de aceite con patrones distintos por barrio.
+- 🏆 **Puntuación y récord**: el mejor puntaje se guarda automáticamente en el navegador (`localStorage`) y persiste entre partidas.
+- 🎉 **Final épico**: al completar los cinco barrios, Isis levanta la Copa Road Fighter con música de victoria y una pantalla de cierre animada.
 
-- **HTML5** — estructura y marcado semántico de la interfaz (HUD, menús, overlays).
-- **CSS3** — diseño responsive (`clamp`, `dvh`, media queries) para adaptarse a PC, tablet y celular, incluyendo soporte para pantalla completa (`viewport-fit=cover`, Fullscreen API).
-- **JavaScript (ES6+)** — toda la lógica del juego:
-  - **Canvas 2D API** para el renderizado en tiempo real (auto del jugador, tráfico, escenografía, HUD dibujado a mano en cada frame).
-  - **Web Audio API** para generar todos los efectos de sonido y la música del juego de forma sintética (sin archivos `.mp3`/`.wav`), incluyendo el motor, la sirena de la ambulancia y el jingle de cada barrio.
-  - Máquina de estados propia para manejar niveles, vidas, combustible, daño, colisiones y transiciones entre barrios.
-  - Sistema de "eventos programados" por nivel (apariciones garantizadas de ambulancias y carros a caballo en momentos específicos del recorrido).
-- **GitHub Pages** — hosting estático y despliegue continuo del proyecto.
+## 🚀 Cómo jugar
 
-No requiere build, ni `npm install`, ni servidor: es un único archivo `index.html` autocontenido que corre en cualquier navegador moderno.
+No requiere instalación ni servidor:
 
-## 🚀 Cómo correrlo localmente
+1. Descargá o cloná este repositorio.
+2. Abrí el archivo `index.html` con cualquier navegador moderno (Chrome, Firefox, Edge, Safari).
+3. ¡A correr por La Matanza! 🏎️💨
 
 ```bash
-git clone https://coderhouse2025-droid.github.io/Road-FIghter-LM/
-# abrí index.html directamente en el navegador, o serví la carpeta con cualquier servidor estático:
-python3 -m http.server 8080
-```
-## 📂 Estructura del proyecto
-
-```
-index.html   → juego completo (HTML + CSS + JS en un solo archivo)
-README.md    → este documento
+git clone https://github.com/tu-usuario/road-fighter-la-matanza.git
+cd road-fighter-la-matanza
+# Abrí index.html directamente en el navegador
 ```
 
-## ✨ Créditos
+## 🧱 Tecnología
 
-- **Idea, diseño y desarrollo**: Juan Manuel Orellana ([LinkedIn](https://linkedin.com/in/juan-manuel-orellana)).
-- **Inspiración**: *Road Fighter* (Konami, 1984).
-- Todos los gráficos (autos, escenografía, íconos) y sonidos son generados por código, sin assets externos.
+- **HTML5 Canvas** para el renderizado del juego (auto, tráfico, pista y HUD).
+- **JavaScript vanilla**, sin frameworks ni librerías externas.
+- **Web Audio API** para efectos de sonido y música sintetizados en tiempo real.
+- Imágenes embebidas en **Base64** dentro del propio HTML: un solo archivo, cero dependencias.
+- Diseño **responsive**, con soporte para escritorio y dispositivos móviles (controles táctiles).
+
+## 📁 Estructura del repositorio
+
+```
+.
+├── index.html   # Juego completo: HTML, CSS, JS, audio e imágenes embebidos
+└── README.md    # Este archivo
+```
+
+## 🙌 Créditos
+
+- 🎮 Inspirado en **Road Fighter** (Konami, 1984).
+- 🐾 Protagonista y ambientación: creación original con identidad de **La Matanza, Buenos Aires**.
 
 ## 📄 Licencia
 
-Proyecto personal con fines educativos y de portafolio. Podés usar el código como referencia para tus propios proyectos.
+Este proyecto se distribuye bajo licencia [MIT](https://opensource.org/licenses/MIT). El nombre "Road Fighter" y la obra original pertenecen a Konami; este es un proyecto de fan sin fines comerciales.
+
+---
+
+<p align="center">Hecho con 🐾 y mucho café en La Matanza</p>
