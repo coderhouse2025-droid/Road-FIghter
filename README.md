@@ -90,4 +90,5 @@ Este proyecto se distribuye bajo licencia [MIT](https://opensource.org/licenses/
 
 ---
 
-<p align="center">Hecho con 🐾 y mucho maté en La Matanza</p>
+<p align="center">Hecho con 🐾 y muchos <img width="512" height="512" alt="te-de-mate" src="https://github.com/user-attachments/assets/09cced83-5026-4718-b2f0-d4ef6b319aeb" />
+ en La Matanza</p>
