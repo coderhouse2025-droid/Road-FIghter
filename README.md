@@ -1,3 +1,5 @@
+<img width="1147" height="1372" alt="banner RF" src="https://github.com/user-attachments/assets/f1af2649-6cd7-4943-9399-1f13c17b650c" />
+
 # 🏁 Road Fighter — Versión La Matanza
 
 > 🐾 Un homenaje arcade al clásico **Road Fighter** (Konami, 1984), reversionado con identidad propia: **Isis**, una gata gris atigrada con el número **31**, corre en un Fórmula 1 rosa a través de cinco barrios del partido de **La Matanza, Buenos Aires**.
@@ -6,6 +8,8 @@
 ![Plataforma](https://img.shields.io/badge/plataforma-navegador-blue)
 ![Tecnología](https://img.shields.io/badge/tech-HTML5%20%7C%20Canvas%20%7C%20JS-yellow)
 ![Licencia](https://img.shields.io/badge/licencia-MIT-lightgrey)
+
+<img width="1688" height="1125" alt="image" src="https://github.com/user-attachments/assets/e66ae9cf-4878-4844-a089-30630c271e61" />
 
 ---
 
