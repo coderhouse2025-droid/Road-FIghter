@@ -15,7 +15,7 @@
 
 ## 🎮 Sobre el juego
 
-Metete en la butaca del Fórmula 1 rosa manejado por Isis y cruzá cinco barrios esquivando tráfico, motos y manchas de aceite. Juntá combustible para reparar la carrocería y llegá entera hasta Gregorio de Laferrere. Cada barrio sube la apuesta: más velocidad, más carriles cerrados y más tránsito.
+Subite en la butaca del Fórmula 1 rosa manejado por Isis y cruzá cinco barrios esquivando tráfico, motos y manchas de aceite. Juntá combustible para reparar la carrocería y llegá entera hasta Gregorio de Laferrere. Cada barrio sube la apuesta: más velocidad, más carriles cerrados y más tránsito.
 
 El juego es un archivo **HTML único y autocontenido** (sin dependencias externas, sin instalación): todo el código, los gráficos, la música y los efectos de sonido están embebidos en `index.html`. Basta con abrirlo en un navegador para jugar.
 
