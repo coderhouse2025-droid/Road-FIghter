@@ -1,4 +1,5 @@
-<img width="1147" height="1372" alt="banner RF" src="https://github.com/user-attachments/assets/f1af2649-6cd7-4943-9399-1f13c17b650c" />
+<img width="1148" height="1371" alt="n" src="https://github.com/user-attachments/assets/7ed88bb4-1b1b-4a34-9411-8c36190d417e" />
+
 
 # 🏁 Road Fighter — Versión La Matanza
 
@@ -9,7 +10,8 @@
 ![Tecnología](https://img.shields.io/badge/tech-HTML5%20%7C%20Canvas%20%7C%20JS-yellow)
 ![Licencia](https://img.shields.io/badge/licencia-MIT-lightgrey)
 
-<img width="1688" height="1125" alt="image" src="https://github.com/user-attachments/assets/e66ae9cf-4878-4844-a089-30630c271e61" />
+<img width="1536" height="1024" alt="moc" src="https://github.com/user-attachments/assets/e5df63fe-2184-4619-96a0-41499e76f1b9" />
+
 
 ---
 
